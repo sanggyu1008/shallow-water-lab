@@ -1,0 +1,16 @@
+numpy
+scipy
+pandas
+matplotlib
+pyyaml
+tqdm
+
+# Notebook
+jupyterlab
+notebook
+ipykernel
+
+# Development
+pytest
+black
+ruff

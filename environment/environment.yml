@@ -1,0 +1,24 @@
+name: numlab
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+
+  # Core scientific stack
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - pyyaml
+  - tqdm
+
+  # Notebook workflow
+  - jupyterlab
+  - notebook
+  - ipykernel
+
+  # Development tools
+  - pytest
+  - black
+  - ruff

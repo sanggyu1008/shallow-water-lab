@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# pytest / tooling
+.pytest_cache/
+.ruff_cache/
+
+# Logs / temp
+*.log
+logs/
+*.tmp
+*.bak
+
+# 임시 노트북
+notebooks/_scratch/
+
+# 큰 결과물·데이터는 추적하지 않고, 디렉토리 구조만 .gitkeep으로 유지
+outputs/**
+!outputs/
+!outputs/**/
+!outputs/**/.gitkeep
+data/**
+!data/
+!data/**/
+!data/**/.gitkeep

@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shallow-water-lab"
+version = "0.1.0"
+description = "천수방정식(shallow water equations)을 격자에서 직접 적분하는 해양 전진모델 실습 프로젝트"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Sanggyu Jeon" }
+]
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "pandas",
+    "pyyaml",
+    "tqdm",
+]
+
+[project.optional-dependencies]
+notebook = [
+    "jupyterlab",
+    "notebook",
+    "ipykernel",
+]
+
+dev = [
+    "pytest",
+    "black",
+    "ruff",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 88
+target-version = ["py310", "py311"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]
+ignore = []
